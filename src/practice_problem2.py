@@ -114,7 +114,7 @@ def practice_problem2a(sequence, delta):
     #    TIME ESTIMATE:   5 minutes.
     ####################################################################
 
-    for k in range (len(sequence)):
+    for k in range(len(sequence)):
         sequence[k] = sequence[k] + delta
     return sequence
 
@@ -184,6 +184,7 @@ def run_test_practice_problem2b():
     st.SimpleTestCase.run_tests('practice_problem2b', tests)
 
 
+
 def practice_problem2b(sequence):
     """
     What comes in:
@@ -204,7 +205,7 @@ def practice_problem2b(sequence):
       :type sequence [str]
     """
     ####################################################################
-    # TODO: 4. Implement and test this function.
+    # DONE: 4. Implement and test this function.
     #     The testing code is already written for you (above).
     ####################################################################
     # DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
@@ -212,6 +213,14 @@ def practice_problem2b(sequence):
     #    TIME ESTIMATE:   10 minutes.
     ####################################################################
 
+    apple = ''
+    for k in range(len(sequence)):
+        item = sequence[k]
+        if item == '':
+            apple = apple
+        else:
+            apple += item[0]
+    return apple
 
 # ----------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
