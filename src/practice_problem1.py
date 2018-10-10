@@ -5,8 +5,8 @@ This problem provides practice at:
   ***  IMPLEMENTING CLASSES.  ***
 
 Authors: David Mutchler, Valerie Galluzzi, Mark Hays, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         their colleagues and Dylan Frazee.
+"""  # Dylan Frazee: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 ########################################################################
 # Students:
@@ -103,6 +103,12 @@ class Box(object):
         #    TIME ESTIMATE:   5 minutes.
         # --------------------------------------------------------------
 
+        self.volume = volume
+        self.contents = contents
+        number = len(contents)
+        if number > volume:
+            self.contents = ''
+
     def append_string(self, additional_contents):
         """
         What comes in:
@@ -156,6 +162,7 @@ class Box(object):
         #       Read_this_ONLY_when_asked_Part_2.txt
         #    and continue working on the problem.
         # --------------------------------------------------------------
+
 
     def double(self):
         """
